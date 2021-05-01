@@ -357,6 +357,7 @@ a {
 .text-center {
     text-align: center!important;
     font-weight: lighter;
+    margin-bottom: 50px;
 }
 .advantage-list-items .icon.adv-icon-ship {
     background: url('https://cdn.shopify.com/s/files/1/0341/3498/2789/t/181/assets/ship.svg');
