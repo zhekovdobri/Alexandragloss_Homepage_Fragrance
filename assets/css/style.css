@@ -405,7 +405,7 @@ a {
 .row {
     display: flex;
     flex-direction: row;
-    color: "white";
+    color: #fff;
 }
 
 body > .container{
