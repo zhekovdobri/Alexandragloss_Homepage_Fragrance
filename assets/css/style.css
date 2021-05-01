@@ -322,14 +322,15 @@ a {
     padding-bottom: 5rem;
     margin: 0px;  
     width: max;
-    color: #fff;
+    
 }
-/* #advantage-list .inverted {
+#advantage-list .inverted {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1000px;
-} */
+    margin:0px;
+    height: 200px;
+}
 /* /////////////////// */
 .shopify-section {
     background-image: url('../img/map.png');
@@ -358,7 +359,6 @@ a {
 .text-center {
     text-align: center!important;
     font-weight: lighter;
-    margin-bottom: 50px;
 }
 .advantage-list-items .icon.adv-icon-ship {
     background: url('https://cdn.shopify.com/s/files/1/0341/3498/2789/t/181/assets/ship.svg');
@@ -407,7 +407,6 @@ a {
 .row {
     display: flex;
     flex-direction: row;
-    color: #fff;
 }
 
 body > .container{
@@ -439,5 +438,5 @@ body {
 #particle-canvas {
   width: 100%;
   height: 100%;
-  
+  margin: 0;
 }
