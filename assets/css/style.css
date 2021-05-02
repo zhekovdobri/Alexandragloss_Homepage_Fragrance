@@ -411,6 +411,12 @@ a {
     color: #fff;
 }
 
+.row footerIcon {
+    display: flex;
+    flex-direction: row;
+    color: #000;
+}
+
 body > .container{
     margin:0px;
     padding:0px;
