@@ -316,12 +316,15 @@ a {
 }
 #advantage-list  {
     display: flex;
+    /* align-items: center;
+    justify-content: center; */
     margin-left:0px; ;
     background: #000;
     padding-top: 5rem;
     padding-bottom: 5rem;
     margin: 0px;  
-    width: max;
+    
+   
     
 }
 #advantage-list .inverted {
@@ -330,10 +333,13 @@ a {
     justify-content: center;
     margin:0px;
     height: 200px;
+    width: 800px;
+    
 }
 /* /////////////////// */
 .shopify-section {
     background-image: url('../img/map.png');
+    cursor: pointer;
 }
 #stroe-locator .btn-store-locator {
     width: 100%;
@@ -359,7 +365,6 @@ a {
 .text-center {
     text-align: center!important;
     font-weight: lighter;
-    margin-bottom: 50px;
 }
 .advantage-list-items .icon.adv-icon-ship {
     background: url('https://cdn.shopify.com/s/files/1/0341/3498/2789/t/181/assets/ship.svg');
@@ -408,14 +413,8 @@ a {
 .row {
     display: flex;
     flex-direction: row;
-    color: #fff;
 }
 
-.row footerIcon {
-    display: flex;
-    flex-direction: row;
-    color: #000;
-}
 
 body > .container{
     margin:0px;
@@ -445,6 +444,47 @@ body {
 
 #particle-canvas {
   width: 100%;
-  height: 100%;
-  margin: 0;
+  height: 400px;
+  position: absolute;
+  bottom: 20%;
+  
+}
+/* cavas_Orb */
+
+.opa {
+  animation: flickr 6s ease-in-out infinite;
+  animation-fill-mode: both;
+  height: 400px;
+  bottom: 40%;
+  
+}
+
+canvas {
+  animation: floatting 10s ease-in-out infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes floatting {
+  0%,
+  100% {
+    transform: translate3d(0, -5px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes flickr {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translate3d(-5px, 0px, 0);
+  }
+  25%,75% {
+     opacity: 1;
+  }
+  50% {
+    opacity: .5;
+    transform: translate3d(5px, 0px, 0);
+  }
 }
