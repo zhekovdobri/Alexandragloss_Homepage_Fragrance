@@ -1,1 +1,296 @@
+/**
+* Insert your styles with Liquid below.
+*
+* Import additional stylesheets into this sheet using CSS imports:
+* @import url('./global/form.scss');
+*/
+/* 
+Swatches Styles
+*/
+.dior-gallery {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 1000vh;
+  min-height: 1000vh;
+  z-index: 3005;
+  overflow: hidden;
+  background-color: #ffffff; }
+
+.dior-gallery-header {
+  position: fixed;
+  width: 100%;
+  height: 5%;
+  right: 0;
+  z-index: 6;
+  overflow: none; }
+
+.dior-gallery-close {
+  float: right;
+  margin: 2%; }
+
+.dior-gallery-body {
+  position: fixed;
+  margin-top: 10vh;
+  width: 100%;
+  height: 80%;
+  right: 0;
+  z-index: 6;
+  overflow: none; }
+
+.dior-carousel-wrapper {
+  max-width: 754px; }
+
+.dior-carousel-image {
+  opacity: 0.7;
+  max-width: 75px;
+  filter: alpha(opacity=70); }
+
+#dior-fullscreen-controls {
+  padding: 0px; }
+
+.dior-minicart-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 1000vh;
+  min-height: 1000vh;
+  z-index: 999;
+  display: none;
+  background-image: url("../assets/black-trans-bg.png");
+  overflow: hidden; }
+
+.dior-minicart-right {
+  position: fixed;
+  width: 100%;
+  max-width: 525px;
+  right: 0;
+  height: 100%;
+  z-index: 6;
+  background-color: white;
+  overflow-y: scroll; }
+
+.dior-mini-cart-header {
+  display: block;
+  height: 50px;
+  padding: 0.25%;
+  float: right;
+  width: 100%;
+  text-align: right;
+  margin-top: -50px;
+  padding-top: 2%; }
+
+.dior-mini-cart-contents {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-top: 50px; }
+
+.dior-nav {
+  flex-wrap: nowrap !important; }
+
+.dior-cart-item-container {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.dior-cart-item {
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.dior-cart-minus {
+  display: block;
+  height: 100%;
+  width: 49%;
+  float: left; }
+
+.dior-cart-plus {
+  display: block;
+  height: 100%;
+  width: 49%;
+  float: right; }
+
+.dior-cart-total {
+  display: block;
+  height: 100%;
+  width: 100%;
+  min-height: 45px;
+  background-color: grey;
+  text-align: center;
+  color: black; }
+
+.dior-cart-complete-order {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-top: 2% !important; }
+
+#dior-cart-gift-message-group {
+  width: 100%; }
+
+/* Minicart sample selector CSS */
+.gallery-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .25rem;
+  margin-bottom: 14px; }
+
+.gallery-card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  /*padding: 1.25rem;*/
+  padding: 5px; }
+
+.gallery-card img {
+  width: 100%;
+  max-width: 100px; }
+
+label {
+  margin-bottom: 0 !important; }
+
+/*--checkbox--*/
+.mycard-footer {
+  display: block; }
+
+.block-check {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Hide the browser's default checkbox */
+.block-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  cursor: pointer; }
+
+/* On mouse-over, add a grey background color */
+.block-check:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+/* When the checkbox is checked, add a blue background */
+.block-check input:checked ~ .checkmark {
+  background-color: #2196F3; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.block-check input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.block-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* Loading graphic for minicart */
+.dior-minicart-loader {
+  position: relative;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3f3f3f;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: 50%;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite; }
+
+#dior-minicart-loading {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  z-index: 1;
+  background-color: black; }
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+
+  100% {
+    transform: rotate(360deg); } }
+
+.modal-dialog-full {
+  width: 98%;
+  height: 92%;
+  padding: 0; }
+
+.modal-content-full {
+  height: 99%; }
+
+/* service page: start */
+.custom-engraving a {
+  color: #0000FF; }
+  .custom-engraving a:hover {
+    color: #0000FF;
+    text-decoration: none; }
+
+/* service page: end */
+/* register page overlay: start */
+.template-register .register-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.75); }
+
+/* register page overlay: end */
 
