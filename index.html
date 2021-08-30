@@ -10,11 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Responsive</title>
 
+    <!-- media_query_css -->
+  <link rel="stylesheet" href="./assets/css/media-query.css">
+
   <!-- Footer_css -->
   <link rel="stylesheet" href="./assets/footer_css/footer.css">
 
-
-
+    
   <!-- bootstrap_style -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -24,12 +26,14 @@
   <!-- font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-  <!-- custom style -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
+  
   <!-- media_query_css -->
   <link rel="stylesheet" href="./assets/css/media-query.css">
 
+  <!-- custom style -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  
   <!-- canvas -->
   <script src="./assets/js/canvas.js"></script>
 
@@ -39,29 +43,32 @@
   <div class="container">
     <div class="hero">
       <div class="hero1">
-        <img src="./assets/img/img1.png" alt="">
+        <img src="./assets/img/img1.png" alt="girl">
       </div>
       
       <div class="hero2">
-        <img src="./assets/img/img2.png" alt="">
+        <img src="./assets/img/img2.png" alt="girl">
       </div>
       <div class="hero3">
-        <img src="./assets/img/img3.png" alt="">
+        <img src="./assets/img/img3.png" alt="girl">
       </div>
     </div>
     <header class="header">
-      <nav>               
-        <ul>
-          <li><a href=""><span id="home">HOME</span></a></li>
-          <li><a href="">ABOUT US</a></li>
-              <li><a href="">PORTFOL<span id="io">IO</span></a></li>
-          <li><a href="">SERVICES</a></li>
-          <li><a href=""><span id="pro">PRO</span>JECTS</a></li>
-          <li><a href="">CONTACTS</a></li>
+      <nav class="nav_menu">               
+        <ul class="menu_ul_1">
+          <li><a href="#"><span id="home">HOME</span></a></li>
+          <li><a href="#"><span>ABOUT US</span></a></li>
+          <li><a href="#"><span>PORTFOLIO</span></a></li>
+          <li><a href="#"><span>SERVICES</span></a></li>
+          <li><a href="#"><span>PROJECTS</span></a></li>
+          <li><a href="#"><span>CONTACTS</span></a></li>
         </ul>
       </nav>
       <div class="title">
-        <h1><img src="./assets/img/A.png" class="logo_img"><span id="logo">LEXANDRAGLOSS</span></h1>
+        <h1>
+          <img src="./assets/img/A.png" class="logo_img">
+          <span class="logo">ALEXANDRAGLOSS</span>
+        </h1>
         <h5 id="subTitle">WE're BRINGING THE FUTURE</h5>
         <button class="button1">PARTICIPATE</button>
         <button class="button2">LEARN HOW</button>
@@ -69,8 +76,8 @@
     </header>
   </div>
 
-  <!-- & SIDEBAR NAVIGATION HAMBURGER -->
-  <div class="sidenav">
+  <!--  SIDEBAR NAVIGATION HAMBURGER Silvia -->
+  <!-- <div class="sidenav">
     <div class="col-md-6">
       <ul class="hook">
         <li><a class="bold" href="">WOMEN'S FASHION</a></li>
@@ -132,60 +139,138 @@
         <li><a href="">Books</a></li>
       </ul>
     </div>
-  </div>
+  </div> -->
 
   <!-- SIDE MENU -->
   <div class="container1">
       <div class="addressbar_menu">
-        <span class="menuIcon" onclick="openSideNav()">&#9776;</span>
-        <ul id="addressBook">
-          <li><a class="bold" href="">GIFTS & SERVICES</a></li>
-          <li><a href="">Women's Fashion Gifts</a></li>
-          <li><a href="">Men's Fashion Gifts</a></li>
-          <li><a href="">Gifts for kids</a></li>
-          <li><a href="">Newborn</a></li>
-        </ul>
+        <!-- SIDEBAR NAVIGATION HAMBURGER Bootstrap -->
+        <button class="btn btn-primary hamburger" id="btnnav1" style="color: black; background-color: transparent;
+        border-style: none; font-size: 32px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&#9776;</button>
 
-        <ul id="addressBook">
-          <li><a class="bold" href="">WOMEN'S FASHION</a></li>
-          <li><a href="">Leather Goods</a></li>
-          <li><a href="">Ready To Wear</a></li>
-          <li><a href="">Accessories</a></li>
-          <li><a href="">Shoes & Bags</a></li>
-        </ul>
-
-        <ul id="addressBook">
-          <li><a class="bold" href="">MEN'S FASHION</a></li>
-          <li><a href="">Leather Goods</a></li>
-          <li><a href="">Ready To Wear</a></li>
-          <li><a href="">Accessories</a></li>
-          <li><a href="">Shoes & Shirt</a></li>
-        </ul>
-
-        <ul id="addressBook">
-          <li><a class="bold" href="">FRAGRANCE</a></li>
-          <li><a href="">Women's Fragrance</a></li>
-          <li><a href="">Men's Fragrance</a></li>
-          <li><a href="">Dmitar Dimov</a></li>
-          <li><a href="">New Fragrance</a></li>
-        </ul>
-
-        <ul id="addressBook">
-          <li><a class="bold" href="">MAKE-UP</a></li>
-          <li><a href="">Accessories</a></li>
-          <li><a href="">Complexion</a></li>
-          <li><a href="">Brushes</a></li>
-          <li><a href="">Nails</a></li>
-        </ul>
-
-        <ul id="addressBook">
-          <li><a class="bold" href="">SKINCARE</a></li>
-          <li><a href="">Eye and Lip Care</a></li>
-          <li><a href="">UV Protection</a></li>
-          <li><a href="">Emulsions</a></li>
-          <li><a href="">Cleaners</a></li>
-        </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Summer line</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="sidenav">
+            <div class="col-md-6">
+              <ul class="hook">
+                <li><a class="bold" href="">WOMEN'S FASHION</a></li>
+                <li><a href="">Leather Goods</a></li>
+                <li><a href="">Ready To Wear</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Shoes & Bags</a></li>
+                <li><a href="">Timepieces</a></li>
+                <li><a href="">Jewelry</a></li>
+                <li><a href=""></a></li>
+              </ul>
+              <ul class="hook">
+                <li><a class="bold" href="">MEN'S FASHION</a></li>
+                <li><a href="">Leather Goods</a></li>
+                <li><a href="">Ready To Wear</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Shoes & Shirt</a></li>
+                <li><a href="">Jewelry</a></li>
+              </ul>
+              <ul class="hook">
+                <li><a class="bold" href="">KIIDS & BABY</a></li>
+                <li><a href="">Baby Boys</a></li>
+                <li><a href="">Baby Girls</a></li>
+                <li><a href="">Girls</a></li>
+                <li><a href="">Boys</a></li>
+              </ul>
+              <ul class="hook">
+                <li><a class="bold" href="">FRAGRANCE</a></li>
+                <li><a href="">Women's Fragrance</a></li>
+                <li><a href="">Men's Fragrance</a></li>
+                <li><a href="">New Fragrance</a></li>
+                <li><a href="">Perfumes</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="hook">
+                <li><a class="bold" href="">MAKE-UP</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Complexion</a></li>
+                <li><a href="">Brushes</a></li>
+                <li><a href="">Nails</a></li>
+                <li><a href="">Eyes</a></li>
+                <li><a href="">Lips</a></li>
+              </ul>
+              <ul class="hook">
+                <li><a class="bold" href="">SKINCARE</a></li>
+                <li><a href="">Eye and Lip Care</a></li>
+                <li><a href="">UV Protection</a></li>
+                <li><a href="">Emulsions</a></li>
+                <li><a href="">Cleaners</a></li>
+                <li><a href="">Serums</a></li>
+              </ul>
+              <ul class="hook">
+                <li><a class="bold" href="">NEWS & FASHION</a></li>
+                <li><a href="">News and Events</a></li>
+                <li><a href="">Exhibitions</a></li>
+                <li><a href="">Podcasts</a></li>
+                <li><a href="">Gifts</a></li>
+                <li><a href="">Books</a></li>
+              </ul>
+            </div>
+          </div>
+          ...
+        </div>
       </div>
+      <!-- ////////// -->
+
+      <!-- <span class="menuIcon" onclick="openSideNav()">&#9776;</span> -->
+      <ul id="addressBook">
+        <li><a class="bold" href="">GIFTS & SERVICES</a></li>
+        <li><a href="">Women's Fashion Gifts</a></li>
+        <li><a href="">Men's Fashion Gifts</a></li>
+        <li><a href="">Gifts for kids</a></li>
+        <li><a href="">Newborn</a></li>
+      </ul>
+
+      <ul id="addressBook">
+        <li><a class="bold" href="">WOMEN'S FASHION</a></li>
+        <li><a href="">Leather Goods</a></li>
+        <li><a href="">Ready To Wear</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Shoes & Bags</a></li>
+      </ul>
+
+      <ul id="addressBook">
+        <li><a class="bold" href="">MEN'S FASHION</a></li>
+        <li><a href="">Leather Goods</a></li>
+        <li><a href="">Ready To Wear</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Shoes & Shirt</a></li>
+      </ul>
+
+      <ul id="addressBook">
+        <li><a class="bold" href="">FRAGRANCE</a></li>
+        <li><a href="">Women's Fragrance</a></li>
+        <li><a href="">Men's Fragrance</a></li>
+        <li><a href="">Dmitar Dimov</a></li>
+        <li><a href="">New Fragrance</a></li>
+      </ul>
+
+      <ul id="addressBook">
+        <li><a class="bold" href="">MAKE-UP</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Complexion</a></li>
+        <li><a href="">Brushes</a></li>
+        <li><a href="">Nails</a></li>
+      </ul>
+
+      <ul id="addressBook">
+        <li><a class="bold" href="">SKINCARE</a></li>
+        <li><a href="">Eye and Lip Care</a></li>
+        <li><a href="">UV Protection</a></li>
+        <li><a href="">Emulsions</a></li>
+        <li><a href="">Cleaners</a></li>
+      </ul>
+    </div>
 
     <div class="search">
       <input type="search" placeholder="Search" id="globalSearch" onkeyup="search()">
@@ -195,10 +280,13 @@
   <!-- OFFCANVAS -->
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
+      
+      <div class="col-sm-12 makeup_btn" style="margin:auto; display: flex; flex-direction: row; justify-content: center; text-align: unset;">
+
 <!-- ////////////////////////////////////////////////////// -->
         <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">ONLINE EXCLUSIVE</button>
+          aria-controls="offcanvasBottom" style="color: black; background-color: transparent;
+          border-style: none; font-size: 32px;">&#9776;</button>
 
         <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
           <div class="offcanvas-header">
@@ -207,8 +295,8 @@
           </div>
           <div class="offcanvas-body small">
             <!-- //////////////////////////////////////////////////// -->
-            <div class="addressbar_menu">
-              <span class="menuIcon" onclick="openSideNav()">&#9776;</span>
+            <div class="addressbar_menu addressbar-sm">
+              <!-- <span class="menuIcon" onclick="openSideNav()">&#9776;</span> -->
               <ul id="addressBook">
                 <li><a class="bold" href="">Darina Dimitrowa</a></li>
                 <li><a href="">Cvetomir Tanev</a></li>
@@ -217,7 +305,7 @@
                 <li><a href="">Silvia Stoilova</a></li>
               </ul>
       
-              <ul id="addressBook">
+              <ul class="book" id="addressBook">
                 <li><a class="bold" href="">Darina Dimitrowa</a></li>
                 <li><a href="">Cvetomir Tanev</a></li>
                 <li><a href="">Ivan Ibanov</a></li>
@@ -257,146 +345,31 @@
                 <li><a href="">Silvia Stoilova</a></li>
               </ul>
             </div>
+
       <!-- /////////////////////////////// -->
-          </div>
-        </div>
-     
-
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">MAKEUP</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
+            
           </div>
         </div>
 
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">SKINCARE</button>
+        <nav class="menu_h">
+          <ul class="menu_ul_2">
+            <a href="#">MAKEUP</a>
+            <a href="#">SKINCARE</a>
+            <a href="#">ART OF GIFTING</a>
+            <a href="#">WOMEN'S FASHION & ACCESSORIES</a>
+            <a href="#">MEN'S FASHION</a>
+            <a href="#">FRAGRANCE</a>
+            <a href="#">GIFTS & SERVICES</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACTS</a>
+            <a href="#">FAQ</a>
+          </ul>
+        </nav>
 
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
-          </div>
-        </div>
-        
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">ART OF GIFTING</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
-          </div>
-        </div>
-
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">WOMEN'S FASHION & ACCESSORIES</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
-          </div>
-        </div>
-
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">MEN'S FASHION</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
-          </div>
-        </div>
-
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">FRAGRANCE</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">GIFTS & SERVICES
-            ...
-          </div>
-        </div>
-
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">GIFTS & SERVICES</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
-          </div>
-        </div>
-
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">ABOUT US</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
-          </div>
-        </div>
-
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">CONTACTS</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
-          </div>
-        </div>
-
-        <button class="btn btn-primary" id="btnnav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-          aria-controls="offcanvasBottom">FAQ</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small">
-            ...
-          </div>
-        </div>
-
-        
-
-      <!-- </dvi>
+      </div>
     </div>
-  </div> -->
+  </div>
+
 
   <section>
     <div class="container">
@@ -469,41 +442,56 @@
               <h2>THE ENGRAVING WORKSHOP: A UNIQUE EXPERIENCE</h2>
             </div><br>
           </div>
-          <div class="parfumeContainer">
+        </div>
+
+        <div class="card mb-3">
+          <img src="./assets/img/Parfume10.jpg" class="card-img-top" alt="parfume">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <div class="image-button">DISCOVER</div>
+            <p class="col-12 col-lg-8 col-sm-9 mx-auto my-4 text-center">Enjoy custom engraving on your Mothers' Day gift. Her name, an endearment, a special date: personalize your gift to make the moment unforgettable. The service is available for fragrance in all sizes. Complimentary engraving service available for fragrance in 100ml or above and Prestige La Micro-Huile de Rose Advanced Serum 50ml or 75ml.</p>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+          </div>
+        </div>
+        
+
+          
+
+          <!-- <div class="parfumeContainer">
             <div class="parfume">
-              <img class="col-sm-12" id="parfume"  src="./assets/img/112.png" alt="parfume">
+              <img class="col-sm-12" id="parfume"  src="./assets/img/Parfume10.jpg" alt="parfume">
             </div>
             <div class="image-button">DISCOVER</div>
           </div>
           <p class="col-12 col-lg-8 col-sm-9 mx-auto my-4 text-center">Enjoy custom engraving on your Mothers' Day gift. Her name, an endearment, a special date: personalize your gift to make the moment unforgettable. The service is available for fragrance in all sizes. Complimentary engraving service available for fragrance in 100ml or above and Prestige La Micro-Huile de Rose Advanced Serum 50ml or 75ml.</p>
           <br>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
 
 
-  <section>
-    <div class="container">
+  <section class="video">
+    <div class="container" style="display:flex;">
       <div class="row">
         <div class="col-sm-12">
           <div class="title2">
             <div class="moduleHeadline">
-              <h5><span></span></h5>
-              <h5 class="moduleTitle">Video Gallery</h5>
+                <h5><span></span></h5>
+                <h5 class="moduleTitle">Video Gallery</h5>
             </div><br>
-            <div class="video-container">
-              <iframe width="1182" height="665" src="https://www.youtube.com/embed/QuF1zmkVoi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <div class="video-container" >
+                <iframe width="1182" height="665" src="https://www.youtube.com/embed/QuF1zmkVoi8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div> 
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  
   <!-- //////////////////////////////////////// -->
-
-
-
 
   <section>
     <div class="container">
@@ -519,7 +507,7 @@
       <h5 class="moduleTitle">FRAGRANCE</h5>
     </div><br>
 
-    <div id="parfume" class="container">
+    <div id="parfume" class="container" >
       <div class="row">
 
         <div class="card" style="width: 23rem;">
@@ -661,152 +649,6 @@
   <section>
     <div id="footer" class="pt-5 juicy-app-hide"> 
 
-
-
-      <script id="vertexShader" type="x-shader/x-vertex">
-        #include <fog_pars_vertex>
-      
-      uniform float uTime;
-      
-      uniform float uBigWavesElevation;
-      uniform vec2 uBigWavesFrequency;
-      uniform float uBigWaveSpeed;
-      
-      uniform  float uSmallWavesElevation;
-      uniform  float uSmallWavesFrequency;
-      uniform  float uSmallWavesSpeed;
-      uniform float uSmallWavesIterations;
-      
-      varying float vElevation;
-      
-      //	Classic Perlin 3D Noise 
-      //	by Stefan Gustavson
-      //
-      vec4 permute(vec4 x){return mod(((x*34.0)+1.0)*x, 289.0);}
-      vec4 taylorInvSqrt(vec4 r){return 1.79284291400159 - 0.85373472095314 * r;}
-      vec3 fade(vec3 t) {return t*t*t*(t*(t*6.0-15.0)+10.0);}
-      
-      float cnoise(vec3 P){
-        vec3 Pi0 = floor(P); // Integer part for indexing
-        vec3 Pi1 = Pi0 + vec3(1.0); // Integer part + 1
-        Pi0 = mod(Pi0, 289.0);
-        Pi1 = mod(Pi1, 289.0);
-        vec3 Pf0 = fract(P); // Fractional part for interpolation
-        vec3 Pf1 = Pf0 - vec3(1.0); // Fractional part - 1.0
-        vec4 ix = vec4(Pi0.x, Pi1.x, Pi0.x, Pi1.x);
-        vec4 iy = vec4(Pi0.yy, Pi1.yy);
-        vec4 iz0 = Pi0.zzzz;
-        vec4 iz1 = Pi1.zzzz;
-      
-        vec4 ixy = permute(permute(ix) + iy);
-        vec4 ixy0 = permute(ixy + iz0);
-        vec4 ixy1 = permute(ixy + iz1);
-      
-        vec4 gx0 = ixy0 / 7.0;
-        vec4 gy0 = fract(floor(gx0) / 7.0) - 0.5;
-        gx0 = fract(gx0);
-        vec4 gz0 = vec4(0.5) - abs(gx0) - abs(gy0);
-        vec4 sz0 = step(gz0, vec4(0.0));
-        gx0 -= sz0 * (step(0.0, gx0) - 0.5);
-        gy0 -= sz0 * (step(0.0, gy0) - 0.5);
-      
-        vec4 gx1 = ixy1 / 7.0;
-        vec4 gy1 = fract(floor(gx1) / 7.0) - 0.5;
-        gx1 = fract(gx1);
-        vec4 gz1 = vec4(0.5) - abs(gx1) - abs(gy1);
-        vec4 sz1 = step(gz1, vec4(0.0));
-        gx1 -= sz1 * (step(0.0, gx1) - 0.5);
-        gy1 -= sz1 * (step(0.0, gy1) - 0.5);
-      
-        vec3 g000 = vec3(gx0.x,gy0.x,gz0.x);
-        vec3 g100 = vec3(gx0.y,gy0.y,gz0.y);
-        vec3 g010 = vec3(gx0.z,gy0.z,gz0.z);
-        vec3 g110 = vec3(gx0.w,gy0.w,gz0.w);
-        vec3 g001 = vec3(gx1.x,gy1.x,gz1.x);
-        vec3 g101 = vec3(gx1.y,gy1.y,gz1.y);
-        vec3 g011 = vec3(gx1.z,gy1.z,gz1.z);
-        vec3 g111 = vec3(gx1.w,gy1.w,gz1.w);
-      
-        vec4 norm0 = taylorInvSqrt(vec4(dot(g000, g000), dot(g010, g010), dot(g100, g100), dot(g110, g110)));
-        g000 *= norm0.x;
-        g010 *= norm0.y;
-        g100 *= norm0.z;
-        g110 *= norm0.w;
-        vec4 norm1 = taylorInvSqrt(vec4(dot(g001, g001), dot(g011, g011), dot(g101, g101), dot(g111, g111)));
-        g001 *= norm1.x;
-        g011 *= norm1.y;
-        g101 *= norm1.z;
-        g111 *= norm1.w;
-      
-        float n000 = dot(g000, Pf0);
-        float n100 = dot(g100, vec3(Pf1.x, Pf0.yz));
-        float n010 = dot(g010, vec3(Pf0.x, Pf1.y, Pf0.z));
-        float n110 = dot(g110, vec3(Pf1.xy, Pf0.z));
-        float n001 = dot(g001, vec3(Pf0.xy, Pf1.z));
-        float n101 = dot(g101, vec3(Pf1.x, Pf0.y, Pf1.z));
-        float n011 = dot(g011, vec3(Pf0.x, Pf1.yz));
-        float n111 = dot(g111, Pf1);
-      
-        vec3 fade_xyz = fade(Pf0);
-        vec4 n_z = mix(vec4(n000, n100, n010, n110), vec4(n001, n101, n011, n111), fade_xyz.z);
-        vec2 n_yz = mix(n_z.xy, n_z.zw, fade_xyz.y);
-        float n_xyz = mix(n_yz.x, n_yz.y, fade_xyz.x); 
-        return 2.2 * n_xyz;
-      }
-      
-      void main() {
-        #include <begin_vertex>
-        #include <project_vertex>
-        #include <fog_vertex>
-        vec4 modelPosition = modelMatrix * vec4(position, 1.0);
-        float elevation = 
-          sin(modelPosition.x * uBigWavesFrequency.x + uTime * uBigWaveSpeed) 
-          * sin(modelPosition.z * uBigWavesFrequency.y + uTime * uBigWaveSpeed) 
-          * uBigWavesElevation;
-        
-        for(float i = 1.0; i <= 10.0; i++) {
-         
-          elevation -= abs(
-            cnoise(
-              vec3(modelPosition.xz * uSmallWavesFrequency * i, uTime * uSmallWavesSpeed)
-              ) 
-              * uSmallWavesElevation / i
-            );
-           if(i >= uSmallWavesIterations ) {
-            break;
-          }
-        }
-        
-        modelPosition.y += elevation;
-        vec4 viewPosition = viewMatrix * modelPosition;
-        vec4 projectedPosition = projectionMatrix * viewPosition;
-        gl_Position = projectedPosition;
-      
-        vElevation = elevation;
-      }
-      </script>
-      <script id="fragmentShader" type="x-shader/x-fragment">
-        #include <fog_pars_fragment>
-      precision mediump float;
-      uniform vec3 uDepthColor;
-      uniform vec3 uSurfaceColor;
-      
-      uniform float uColorOffset;
-      uniform float uColorMultiplier;
-      
-      varying float vElevation;
-      
-      void main() {
-        float mixStrength = (vElevation + uColorOffset) * uColorMultiplier;
-        vec3 color = mix(uDepthColor, uSurfaceColor, mixStrength);
-        gl_FragColor = vec4(color, 1.0);
-         #include <fog_fragment>
-      }
-      </script>
-      <canvas class="webgl"></canvas>
-
-
-
       <div class="container-fluid">
         <div class="row  justify-content-center text-center">
           <!-- <div class="col-10 col-md-4 footer-widget d-none">
@@ -909,6 +751,7 @@
 
   <!-- jquery -->
   <script src="./assets/jquery/jquery.js"></script>
+
   <!-- bootstrap_script -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
     integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
