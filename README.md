@@ -13,7 +13,7 @@
 </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <div class=pull-right>
-<img align="right" alt="chart" width="400px" src="https://github.com/zhekovdobri/Alexandragloss_Homepage_Fragrance/blob/0dd3cecd2df7421cc4d5b0b8a2cccdf57f960612/assets/img/Alexandragloss%20Fragrance%20language%20chart.png">
+<img align="right" alt="chart" height="200px" src="https://github.com/zhekovdobri/Alexandragloss_Homepage_Fragrance/blob/3eb9f2b6355fd534894af2af4699a3d02c4eb699/assets/img/Homepage_Fragrance_language_chart.png">
 </div>
 
 * _JavaScript_
