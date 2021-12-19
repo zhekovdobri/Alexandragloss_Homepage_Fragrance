@@ -6,6 +6,8 @@
 
 #### JavaScript, HTML5 and CSS3 author homepage design.
 
+#### [<ins>Check the entire project here</ins>](https://zhekovdobri.github.io/Alexandragloss_Homepage_Fragrance/)
+
 ## Technologies Used
 
 <div class=pull-left>
@@ -84,4 +86,4 @@ NB!: Content some dummy "Lorem Ipsum" text.
 
 Alexandragloss_Homepage_Fragrance project is licensed under the GNU GPL 3 license.
 
-Copyright(c)2016-2021 Dobri Zhekov
+<sub><sup>Copiright © 2016-2021 Dobri Zhekov All Rights Reserved</sup></sub>
